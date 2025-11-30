@@ -109,8 +109,7 @@ public class Main extends Application {
             minutes = 0;
             hours++;
         }
-        //%02d means % formats a value, 0 pads with 0 if number to short, 2 is maximum charaters, d means decimal integer
-        // that gets formated into String.format.
+
         timerLabel.setText(String.format("%02d:%02d:%02d", hours, minutes, seconds));
         }));
         timerTime.setCycleCount(Timeline.INDEFINITE); //OCKSÅ EN FETING KONSTANT HÄMTAD FRÅN NÅN GOLISTA
